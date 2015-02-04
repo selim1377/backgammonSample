@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F554C261A822F2300625CC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C251A822F2300625CC4 /* main.m */; };
+		8F554C291A822F2300625CC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C281A822F2300625CC4 /* AppDelegate.m */; };
+		8F554C2C1A822F2300625CC4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C2B1A822F2300625CC4 /* ViewController.m */; };
+		8F554C2F1A822F2300625CC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F554C2D1A822F2300625CC4 /* Main.storyboard */; };
+		8F554C311A822F2300625CC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F554C301A822F2300625CC4 /* Images.xcassets */; };
+		8F554C341A822F2300625CC4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F554C321A822F2300625CC4 /* LaunchScreen.xib */; };
+		8F554C401A822F2300625CC4 /* BackgammonSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C3F1A822F2300625CC4 /* BackgammonSampleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F554C3A1A822F2300625CC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F554C181A822F2300625CC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F554C1F1A822F2300625CC4;
+			remoteInfo = BackgammonSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F554C201A822F2300625CC4 /* BackgammonSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgammonSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F554C241A822F2300625CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F554C251A822F2300625CC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8F554C271A822F2300625CC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8F554C281A822F2300625CC4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8F554C2A1A822F2300625CC4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8F554C2B1A822F2300625CC4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8F554C2E1A822F2300625CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F554C301A822F2300625CC4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8F554C331A822F2300625CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8F554C391A822F2300625CC4 /* BackgammonSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackgammonSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F554C3E1A822F2300625CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F554C3F1A822F2300625CC4 /* BackgammonSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgammonSampleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F554C1D1A822F2300625CC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F554C361A822F2300625CC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F554C171A822F2300625CC4 = {
+			isa = PBXGroup;
+			children = (
+				8F554C221A822F2300625CC4 /* BackgammonSample */,
+				8F554C3C1A822F2300625CC4 /* BackgammonSampleTests */,
+				8F554C211A822F2300625CC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F554C211A822F2300625CC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F554C201A822F2300625CC4 /* BackgammonSample.app */,
+				8F554C391A822F2300625CC4 /* BackgammonSampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F554C221A822F2300625CC4 /* BackgammonSample */ = {
+			isa = PBXGroup;
+			children = (
+				8F554C271A822F2300625CC4 /* AppDelegate.h */,
+				8F554C281A822F2300625CC4 /* AppDelegate.m */,
+				8F554C2A1A822F2300625CC4 /* ViewController.h */,
+				8F554C2B1A822F2300625CC4 /* ViewController.m */,
+				8F554C2D1A822F2300625CC4 /* Main.storyboard */,
+				8F554C301A822F2300625CC4 /* Images.xcassets */,
+				8F554C321A822F2300625CC4 /* LaunchScreen.xib */,
+				8F554C231A822F2300625CC4 /* Supporting Files */,
+			);
+			path = BackgammonSample;
+			sourceTree = "<group>";
+		};
+		8F554C231A822F2300625CC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F554C241A822F2300625CC4 /* Info.plist */,
+				8F554C251A822F2300625CC4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F554C3C1A822F2300625CC4 /* BackgammonSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F554C3F1A822F2300625CC4 /* BackgammonSampleTests.m */,
+				8F554C3D1A822F2300625CC4 /* Supporting Files */,
+			);
+			path = BackgammonSampleTests;
+			sourceTree = "<group>";
+		};
+		8F554C3D1A822F2300625CC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F554C3E1A822F2300625CC4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F554C1F1A822F2300625CC4 /* BackgammonSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F554C431A822F2300625CC4 /* Build configuration list for PBXNativeTarget "BackgammonSample" */;
+			buildPhases = (
+				8F554C1C1A822F2300625CC4 /* Sources */,
+				8F554C1D1A822F2300625CC4 /* Frameworks */,
+				8F554C1E1A822F2300625CC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BackgammonSample;
+			productName = BackgammonSample;
+			productReference = 8F554C201A822F2300625CC4 /* BackgammonSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F554C381A822F2300625CC4 /* BackgammonSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F554C461A822F2300625CC4 /* Build configuration list for PBXNativeTarget "BackgammonSampleTests" */;
+			buildPhases = (
+				8F554C351A822F2300625CC4 /* Sources */,
+				8F554C361A822F2300625CC4 /* Frameworks */,
+				8F554C371A822F2300625CC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F554C3B1A822F2300625CC4 /* PBXTargetDependency */,
+			);
+			name = BackgammonSampleTests;
+			productName = BackgammonSampleTests;
+			productReference = 8F554C391A822F2300625CC4 /* BackgammonSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F554C181A822F2300625CC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Selim Bakdemir";
+				TargetAttributes = {
+					8F554C1F1A822F2300625CC4 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					8F554C381A822F2300625CC4 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 8F554C1F1A822F2300625CC4;
+					};
+				};
+			};
+			buildConfigurationList = 8F554C1B1A822F2300625CC4 /* Build configuration list for PBXProject "BackgammonSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F554C171A822F2300625CC4;
+			productRefGroup = 8F554C211A822F2300625CC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F554C1F1A822F2300625CC4 /* BackgammonSample */,
+				8F554C381A822F2300625CC4 /* BackgammonSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F554C1E1A822F2300625CC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F554C2F1A822F2300625CC4 /* Main.storyboard in Resources */,
+				8F554C341A822F2300625CC4 /* LaunchScreen.xib in Resources */,
+				8F554C311A822F2300625CC4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F554C371A822F2300625CC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F554C1C1A822F2300625CC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F554C2C1A822F2300625CC4 /* ViewController.m in Sources */,
+				8F554C291A822F2300625CC4 /* AppDelegate.m in Sources */,
+				8F554C261A822F2300625CC4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F554C351A822F2300625CC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F554C401A822F2300625CC4 /* BackgammonSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F554C3B1A822F2300625CC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F554C1F1A822F2300625CC4 /* BackgammonSample */;
+			targetProxy = 8F554C3A1A822F2300625CC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8F554C2D1A822F2300625CC4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F554C2E1A822F2300625CC4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8F554C321A822F2300625CC4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F554C331A822F2300625CC4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F554C411A822F2300625CC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F554C421A822F2300625CC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F554C441A822F2300625CC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BackgammonSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F554C451A822F2300625CC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BackgammonSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8F554C471A822F2300625CC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BackgammonSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BackgammonSample.app/BackgammonSample";
+			};
+			name = Debug;
+		};
+		8F554C481A822F2300625CC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BackgammonSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BackgammonSample.app/BackgammonSample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F554C1B1A822F2300625CC4 /* Build configuration list for PBXProject "BackgammonSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F554C411A822F2300625CC4 /* Debug */,
+				8F554C421A822F2300625CC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F554C431A822F2300625CC4 /* Build configuration list for PBXNativeTarget "BackgammonSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F554C441A822F2300625CC4 /* Debug */,
+				8F554C451A822F2300625CC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8F554C461A822F2300625CC4 /* Build configuration list for PBXNativeTarget "BackgammonSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F554C471A822F2300625CC4 /* Debug */,
+				8F554C481A822F2300625CC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F554C181A822F2300625CC4 /* Project object */;
+}
