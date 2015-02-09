@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F05B9811A8602ED00458BD9 /* RollDiceAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F05B9801A8602ED00458BD9 /* RollDiceAction.m */; };
+		8F05B9871A861A2700458BD9 /* Move.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F05B9861A861A2700458BD9 /* Move.m */; };
 		8F554C261A822F2300625CC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C251A822F2300625CC4 /* main.m */; };
 		8F554C291A822F2300625CC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C281A822F2300625CC4 /* AppDelegate.m */; };
 		8F554C2C1A822F2300625CC4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C2B1A822F2300625CC4 /* ViewController.m */; };
@@ -14,6 +16,34 @@
 		8F554C311A822F2300625CC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F554C301A822F2300625CC4 /* Images.xcassets */; };
 		8F554C341A822F2300625CC4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F554C321A822F2300625CC4 /* LaunchScreen.xib */; };
 		8F554C401A822F2300625CC4 /* BackgammonSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C3F1A822F2300625CC4 /* BackgammonSampleTests.m */; };
+		8F554C4E1A8232E300625CC4 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C4D1A8232E300625CC4 /* GameController.m */; };
+		8F554C531A8238AE00625CC4 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C521A8238AE00625CC4 /* BaseModel.m */; };
+		8F554C561A82392D00625CC4 /* GameEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C551A82392D00625CC4 /* GameEngine.m */; };
+		8F554C591A82393E00625CC4 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C581A82393E00625CC4 /* BaseController.m */; };
+		8F554C5C1A82394F00625CC4 /* BoardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C5B1A82394F00625CC4 /* BoardController.m */; };
+		8F554C5F1A82395D00625CC4 /* DiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C5E1A82395D00625CC4 /* DiceController.m */; };
+		8F554C621A82396900625CC4 /* PlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C611A82396900625CC4 /* PlayerController.m */; };
+		8F554C661A823EEA00625CC4 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C651A823EEA00625CC4 /* UIView+Animation.m */; };
+		8F554C691A8240CE00625CC4 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C681A8240CE00625CC4 /* Player.m */; };
+		8F554C6C1A824EC900625CC4 /* Dices.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C6B1A824EC900625CC4 /* Dices.m */; };
+		8F554C6F1A824EEC00625CC4 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C6E1A824EEC00625CC4 /* Dice.m */; };
+		8F554C711A8252AE00625CC4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F554C701A8252AE00625CC4 /* CoreGraphics.framework */; };
+		8F554C741A82589200625CC4 /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C731A82589200625CC4 /* Line.m */; };
+		8F554C7A1A8258D300625CC4 /* Chip.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C791A8258D300625CC4 /* Chip.m */; };
+		8F554C7D1A8258E400625CC4 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C7C1A8258E400625CC4 /* Board.m */; };
+		8F554C831A8260F600625CC4 /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C821A8260F600625CC4 /* Action.m */; };
+		8F554C861A82611600625CC4 /* PlayerTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C851A82611600625CC4 /* PlayerTurn.m */; };
+		8F554C8B1A826CEA00625CC4 /* DiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C8A1A826CEA00625CC4 /* DiceView.m */; };
+		8F554C8E1A826E6800625CC4 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C8D1A826E6800625CC4 /* PlayerView.m */; };
+		8F554C921A82814300625CC4 /* OneDiceAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F554C911A82814300625CC4 /* OneDiceAction.m */; };
+		8F91BFA81A8384B100B89680 /* UIView+Subview.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91BFA71A8384B100B89680 /* UIView+Subview.m */; };
+		8F91BFAB1A83905200B89680 /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91BFAA1A83905200B89680 /* LineView.m */; };
+		8F91BFAE1A8397BF00B89680 /* ChipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91BFAD1A8397BF00B89680 /* ChipView.m */; };
+		8F91BFB01A8398B200B89680 /* ChipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F91BFAF1A8398B200B89680 /* ChipView.xib */; };
+		8FFBDC141A88E5D100C6B8A2 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFBDC131A88E5D100C6B8A2 /* Event.m */; };
+		8FFBDC171A88E6FF00C6B8A2 /* Observable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFBDC161A88E6FF00C6B8A2 /* Observable.m */; };
+		8FFBDC1A1A88E70D00C6B8A2 /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFBDC191A88E70D00C6B8A2 /* Observer.m */; };
+		8FFCF1191A864662001354B3 /* MoveAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCF1181A864662001354B3 /* MoveAction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +57,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F05B97F1A8602ED00458BD9 /* RollDiceAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollDiceAction.h; sourceTree = "<group>"; };
+		8F05B9801A8602ED00458BD9 /* RollDiceAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RollDiceAction.m; sourceTree = "<group>"; };
+		8F05B9821A86040700458BD9 /* GameState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameState.h; sourceTree = "<group>"; };
+		8F05B9841A86043300458BD9 /* PlayerType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerType.h; sourceTree = "<group>"; };
+		8F05B9851A861A2700458BD9 /* Move.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Move.h; sourceTree = "<group>"; };
+		8F05B9861A861A2700458BD9 /* Move.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Move.m; sourceTree = "<group>"; };
 		8F554C201A822F2300625CC4 /* BackgammonSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgammonSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F554C241A822F2300625CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F554C251A822F2300625CC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +76,65 @@
 		8F554C391A822F2300625CC4 /* BackgammonSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackgammonSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F554C3E1A822F2300625CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F554C3F1A822F2300625CC4 /* BackgammonSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgammonSampleTests.m; sourceTree = "<group>"; };
+		8F554C4C1A8232E300625CC4 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		8F554C4D1A8232E300625CC4 /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
+		8F554C511A8238AE00625CC4 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		8F554C521A8238AE00625CC4 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		8F554C541A82392D00625CC4 /* GameEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEngine.h; sourceTree = "<group>"; };
+		8F554C551A82392D00625CC4 /* GameEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameEngine.m; sourceTree = "<group>"; };
+		8F554C571A82393E00625CC4 /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		8F554C581A82393E00625CC4 /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		8F554C5A1A82394F00625CC4 /* BoardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardController.h; sourceTree = "<group>"; };
+		8F554C5B1A82394F00625CC4 /* BoardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardController.m; sourceTree = "<group>"; };
+		8F554C5D1A82395D00625CC4 /* DiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiceController.h; sourceTree = "<group>"; };
+		8F554C5E1A82395D00625CC4 /* DiceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiceController.m; sourceTree = "<group>"; };
+		8F554C601A82396900625CC4 /* PlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerController.h; sourceTree = "<group>"; };
+		8F554C611A82396900625CC4 /* PlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerController.m; sourceTree = "<group>"; };
+		8F554C641A823EEA00625CC4 /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		8F554C651A823EEA00625CC4 /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		8F554C671A8240CE00625CC4 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		8F554C681A8240CE00625CC4 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		8F554C6A1A824EC900625CC4 /* Dices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dices.h; sourceTree = "<group>"; };
+		8F554C6B1A824EC900625CC4 /* Dices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dices.m; sourceTree = "<group>"; };
+		8F554C6D1A824EEC00625CC4 /* Dice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
+		8F554C6E1A824EEC00625CC4 /* Dice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
+		8F554C701A8252AE00625CC4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8F554C721A82589200625CC4 /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		8F554C731A82589200625CC4 /* Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
+		8F554C781A8258D300625CC4 /* Chip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chip.h; sourceTree = "<group>"; };
+		8F554C791A8258D300625CC4 /* Chip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chip.m; sourceTree = "<group>"; };
+		8F554C7B1A8258E400625CC4 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		8F554C7C1A8258E400625CC4 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
+		8F554C7E1A825DFA00625CC4 /* GameEngineDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEngineDelegate.h; sourceTree = "<group>"; };
+		8F554C7F1A825E4800625CC4 /* PreGameEngineDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreGameEngineDelegate.h; sourceTree = "<group>"; };
+		8F554C811A8260F600625CC4 /* Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = "<group>"; };
+		8F554C821A8260F600625CC4 /* Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Action.m; sourceTree = "<group>"; };
+		8F554C841A82611600625CC4 /* PlayerTurn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerTurn.h; sourceTree = "<group>"; };
+		8F554C851A82611600625CC4 /* PlayerTurn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerTurn.m; sourceTree = "<group>"; };
+		8F554C871A82621100625CC4 /* Actions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Actions.h; sourceTree = "<group>"; };
+		8F554C891A826CEA00625CC4 /* DiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiceView.h; sourceTree = "<group>"; };
+		8F554C8A1A826CEA00625CC4 /* DiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiceView.m; sourceTree = "<group>"; };
+		8F554C8C1A826E6800625CC4 /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		8F554C8D1A826E6800625CC4 /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
+		8F554C8F1A827D4F00625CC4 /* UIDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDelegate.h; sourceTree = "<group>"; };
+		8F554C901A82814300625CC4 /* OneDiceAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneDiceAction.h; sourceTree = "<group>"; };
+		8F554C911A82814300625CC4 /* OneDiceAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneDiceAction.m; sourceTree = "<group>"; };
+		8F91BFA61A8384B100B89680 /* UIView+Subview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Subview.h"; sourceTree = "<group>"; };
+		8F91BFA71A8384B100B89680 /* UIView+Subview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Subview.m"; sourceTree = "<group>"; };
+		8F91BFA91A83905200B89680 /* LineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineView.h; sourceTree = "<group>"; };
+		8F91BFAA1A83905200B89680 /* LineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineView.m; sourceTree = "<group>"; };
+		8F91BFAC1A8397BF00B89680 /* ChipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChipView.h; sourceTree = "<group>"; };
+		8F91BFAD1A8397BF00B89680 /* ChipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChipView.m; sourceTree = "<group>"; };
+		8F91BFAF1A8398B200B89680 /* ChipView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChipView.xib; sourceTree = "<group>"; };
+		8FFBDC121A88E5D100C6B8A2 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		8FFBDC131A88E5D100C6B8A2 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		8FFBDC151A88E6FF00C6B8A2 /* Observable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observable.h; sourceTree = "<group>"; };
+		8FFBDC161A88E6FF00C6B8A2 /* Observable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Observable.m; sourceTree = "<group>"; };
+		8FFBDC181A88E70D00C6B8A2 /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
+		8FFBDC191A88E70D00C6B8A2 /* Observer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Observer.m; sourceTree = "<group>"; };
+		8FFBDC1B1A88E8CE00C6B8A2 /* EventType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventType.h; sourceTree = "<group>"; };
+		8FFCF1171A864662001354B3 /* MoveAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveAction.h; sourceTree = "<group>"; };
+		8FFCF1181A864662001354B3 /* MoveAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveAction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F554C711A8252AE00625CC4 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,11 +156,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F05B9831A86042100458BD9 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				8F05B9821A86040700458BD9 /* GameState.h */,
+				8F05B9841A86043300458BD9 /* PlayerType.h */,
+				8FFBDC1B1A88E8CE00C6B8A2 /* EventType.h */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
 		8F554C171A822F2300625CC4 = {
 			isa = PBXGroup;
 			children = (
 				8F554C221A822F2300625CC4 /* BackgammonSample */,
 				8F554C3C1A822F2300625CC4 /* BackgammonSampleTests */,
+				8F554C701A8252AE00625CC4 /* CoreGraphics.framework */,
 				8F554C211A822F2300625CC4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +188,11 @@
 		8F554C221A822F2300625CC4 /* BackgammonSample */ = {
 			isa = PBXGroup;
 			children = (
+				8F554C881A826CD100625CC4 /* Custom Views */,
+				8F554C801A8260DB00625CC4 /* Actions */,
+				8F554C631A823C8B00625CC4 /* Categories */,
+				8F554C501A82389F00625CC4 /* Models */,
+				8F554C4F1A82389900625CC4 /* Controllers */,
 				8F554C271A822F2300625CC4 /* AppDelegate.h */,
 				8F554C281A822F2300625CC4 /* AppDelegate.m */,
 				8F554C2A1A822F2300625CC4 /* ViewController.h */,
@@ -117,6 +229,103 @@
 				8F554C3E1A822F2300625CC4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F554C4F1A82389900625CC4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F554C8F1A827D4F00625CC4 /* UIDelegate.h */,
+				8F554C4C1A8232E300625CC4 /* GameController.h */,
+				8F554C4D1A8232E300625CC4 /* GameController.m */,
+				8F554C571A82393E00625CC4 /* BaseController.h */,
+				8F554C581A82393E00625CC4 /* BaseController.m */,
+				8F554C5A1A82394F00625CC4 /* BoardController.h */,
+				8F554C5B1A82394F00625CC4 /* BoardController.m */,
+				8F554C5D1A82395D00625CC4 /* DiceController.h */,
+				8F554C5E1A82395D00625CC4 /* DiceController.m */,
+				8F554C601A82396900625CC4 /* PlayerController.h */,
+				8F554C611A82396900625CC4 /* PlayerController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8F554C501A82389F00625CC4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F05B9831A86042100458BD9 /* Enums */,
+				8FFBDC151A88E6FF00C6B8A2 /* Observable.h */,
+				8FFBDC161A88E6FF00C6B8A2 /* Observable.m */,
+				8FFBDC181A88E70D00C6B8A2 /* Observer.h */,
+				8FFBDC191A88E70D00C6B8A2 /* Observer.m */,
+				8FFBDC121A88E5D100C6B8A2 /* Event.h */,
+				8FFBDC131A88E5D100C6B8A2 /* Event.m */,
+				8F554C7E1A825DFA00625CC4 /* GameEngineDelegate.h */,
+				8F554C7F1A825E4800625CC4 /* PreGameEngineDelegate.h */,
+				8F554C511A8238AE00625CC4 /* BaseModel.h */,
+				8F554C521A8238AE00625CC4 /* BaseModel.m */,
+				8F554C541A82392D00625CC4 /* GameEngine.h */,
+				8F554C551A82392D00625CC4 /* GameEngine.m */,
+				8F554C671A8240CE00625CC4 /* Player.h */,
+				8F554C681A8240CE00625CC4 /* Player.m */,
+				8F554C6A1A824EC900625CC4 /* Dices.h */,
+				8F554C6B1A824EC900625CC4 /* Dices.m */,
+				8F554C6D1A824EEC00625CC4 /* Dice.h */,
+				8F554C6E1A824EEC00625CC4 /* Dice.m */,
+				8F554C721A82589200625CC4 /* Line.h */,
+				8F554C731A82589200625CC4 /* Line.m */,
+				8F554C781A8258D300625CC4 /* Chip.h */,
+				8F554C791A8258D300625CC4 /* Chip.m */,
+				8F554C7B1A8258E400625CC4 /* Board.h */,
+				8F554C7C1A8258E400625CC4 /* Board.m */,
+				8F05B9851A861A2700458BD9 /* Move.h */,
+				8F05B9861A861A2700458BD9 /* Move.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8F554C631A823C8B00625CC4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8F91BFA61A8384B100B89680 /* UIView+Subview.h */,
+				8F91BFA71A8384B100B89680 /* UIView+Subview.m */,
+				8F554C641A823EEA00625CC4 /* UIView+Animation.h */,
+				8F554C651A823EEA00625CC4 /* UIView+Animation.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		8F554C801A8260DB00625CC4 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				8F554C871A82621100625CC4 /* Actions.h */,
+				8F554C811A8260F600625CC4 /* Action.h */,
+				8F554C821A8260F600625CC4 /* Action.m */,
+				8F554C841A82611600625CC4 /* PlayerTurn.h */,
+				8F554C851A82611600625CC4 /* PlayerTurn.m */,
+				8F554C901A82814300625CC4 /* OneDiceAction.h */,
+				8F554C911A82814300625CC4 /* OneDiceAction.m */,
+				8F05B97F1A8602ED00458BD9 /* RollDiceAction.h */,
+				8F05B9801A8602ED00458BD9 /* RollDiceAction.m */,
+				8FFCF1171A864662001354B3 /* MoveAction.h */,
+				8FFCF1181A864662001354B3 /* MoveAction.m */,
+			);
+			name = Actions;
+			sourceTree = "<group>";
+		};
+		8F554C881A826CD100625CC4 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F554C891A826CEA00625CC4 /* DiceView.h */,
+				8F554C8A1A826CEA00625CC4 /* DiceView.m */,
+				8F554C8C1A826E6800625CC4 /* PlayerView.h */,
+				8F554C8D1A826E6800625CC4 /* PlayerView.m */,
+				8F91BFA91A83905200B89680 /* LineView.h */,
+				8F91BFAA1A83905200B89680 /* LineView.m */,
+				8F91BFAC1A8397BF00B89680 /* ChipView.h */,
+				8F91BFAD1A8397BF00B89680 /* ChipView.m */,
+				8F91BFAF1A8398B200B89680 /* ChipView.xib */,
+			);
+			name = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +408,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F91BFB01A8398B200B89680 /* ChipView.xib in Resources */,
 				8F554C2F1A822F2300625CC4 /* Main.storyboard in Resources */,
 				8F554C341A822F2300625CC4 /* LaunchScreen.xib in Resources */,
 				8F554C311A822F2300625CC4 /* Images.xcassets in Resources */,
@@ -219,9 +429,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F554C5C1A82394F00625CC4 /* BoardController.m in Sources */,
+				8F05B9871A861A2700458BD9 /* Move.m in Sources */,
+				8F554C921A82814300625CC4 /* OneDiceAction.m in Sources */,
+				8F554C8E1A826E6800625CC4 /* PlayerView.m in Sources */,
+				8F05B9811A8602ED00458BD9 /* RollDiceAction.m in Sources */,
+				8F91BFAE1A8397BF00B89680 /* ChipView.m in Sources */,
 				8F554C2C1A822F2300625CC4 /* ViewController.m in Sources */,
+				8F554C591A82393E00625CC4 /* BaseController.m in Sources */,
+				8F554C7D1A8258E400625CC4 /* Board.m in Sources */,
+				8F91BFA81A8384B100B89680 /* UIView+Subview.m in Sources */,
+				8FFBDC171A88E6FF00C6B8A2 /* Observable.m in Sources */,
+				8F554C4E1A8232E300625CC4 /* GameController.m in Sources */,
+				8F91BFAB1A83905200B89680 /* LineView.m in Sources */,
+				8F554C6F1A824EEC00625CC4 /* Dice.m in Sources */,
+				8F554C7A1A8258D300625CC4 /* Chip.m in Sources */,
+				8F554C691A8240CE00625CC4 /* Player.m in Sources */,
 				8F554C291A822F2300625CC4 /* AppDelegate.m in Sources */,
+				8FFBDC1A1A88E70D00C6B8A2 /* Observer.m in Sources */,
+				8F554C661A823EEA00625CC4 /* UIView+Animation.m in Sources */,
+				8F554C531A8238AE00625CC4 /* BaseModel.m in Sources */,
+				8F554C5F1A82395D00625CC4 /* DiceController.m in Sources */,
+				8F554C861A82611600625CC4 /* PlayerTurn.m in Sources */,
+				8FFCF1191A864662001354B3 /* MoveAction.m in Sources */,
+				8F554C741A82589200625CC4 /* Line.m in Sources */,
 				8F554C261A822F2300625CC4 /* main.m in Sources */,
+				8F554C6C1A824EC900625CC4 /* Dices.m in Sources */,
+				8F554C831A8260F600625CC4 /* Action.m in Sources */,
+				8F554C8B1A826CEA00625CC4 /* DiceView.m in Sources */,
+				8F554C621A82396900625CC4 /* PlayerController.m in Sources */,
+				8F554C561A82392D00625CC4 /* GameEngine.m in Sources */,
+				8FFBDC141A88E5D100C6B8A2 /* Event.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +652,7 @@
 				8F554C451A822F2300625CC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F554C461A822F2300625CC4 /* Build configuration list for PBXNativeTarget "BackgammonSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +661,7 @@
 				8F554C481A822F2300625CC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
