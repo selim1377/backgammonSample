@@ -218,7 +218,7 @@
 -(void)onSaveNotification:(NSNotification *)notification
 {
     // save the game only in actual game
-    if (self.gameEngine.gameState > GAMESTATE_PREGAME) {
+    if (self.gameEngine.gameState > GAMESTATE_PREGAME && self.gameEngine.gameState < FINISHED) {
         
         [LocalData save];
         
