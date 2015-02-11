@@ -17,9 +17,39 @@
 
 @implementation ChipView
 
+-(instancetype)initWithFrame:(CGRect)frame
+{
+    if ([super initWithFrame:frame]) {
+        
+        self.colorView = [[UIView alloc] initWithFrame:CGRectInset(self.frame, 2, 2)];
+        self.colorView.translatesAutoresizingMaskIntoConstraints = NO;
+        [self addSubview:self.colorView];
+        
+        NSDictionary *viewsDictionary = @{@"subView":self.colorView};
+        
+        NSArray *constraint_POS_V = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-2-[subView]-2-|"
+                                                                            options:0
+                                                                            metrics:nil
+                                                                              views:viewsDictionary];
+        
+        NSArray *constraint_POS_H = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-2-[subView]-2-|"
+                                                                            options:0
+                                                                            metrics:nil
+                                                                              views:viewsDictionary];
+        
+        [self addConstraints:constraint_POS_V];
+        [self addConstraints:constraint_POS_H];
+        
+        self.backgroundColor = [UIColor clearColor];
+    }
+
+    return self;
+}
+
+
 +(instancetype)createPlayerType:(PlayerType)type
 {
-    ChipView *view = (ChipView *) [[[NSBundle mainBundle] loadNibNamed:@"ChipView" owner:self options:nil] objectAtIndex:0];
+    ChipView *view = [[ChipView alloc] initWithFrame:CGRectMake(0, 0, 90, 90)];
     view.playerType = type;
     view.userInteractionEnabled = NO;
     view.tag = (type == kBlackPLayer) ? 50 : 51;

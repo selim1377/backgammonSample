@@ -360,6 +360,7 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.22352941330000001" green="0.67450982329999998" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="cGM-BG-Kmq"/>
                                             <constraint firstAttribute="height" constant="100" id="kZV-Wt-kHE"/>
                                         </constraints>
                                     </view>
@@ -405,8 +406,6 @@
                                     <constraint firstAttribute="centerY" secondItem="W8P-A1-ij8" secondAttribute="centerY" id="CX4-uZ-5qy"/>
                                     <constraint firstAttribute="bottom" secondItem="NJm-h1-BoN" secondAttribute="bottom" constant="20" id="Ehs-lJ-Yla"/>
                                     <constraint firstAttribute="bottom" secondItem="VTq-9u-vlH" secondAttribute="bottom" constant="20" id="G2L-ax-aGi"/>
-                                    <constraint firstItem="bF6-GW-Gl9" firstAttribute="leading" secondItem="W8P-A1-ij8" secondAttribute="trailing" constant="23" id="HMW-vi-y5Q"/>
-                                    <constraint firstItem="W8P-A1-ij8" firstAttribute="leading" secondItem="XyX-Rn-O5N" secondAttribute="trailing" constant="23" id="K6l-Pc-16D"/>
                                     <constraint firstAttribute="trailing" secondItem="bF6-GW-Gl9" secondAttribute="trailing" constant="20" id="RfZ-tg-4vl"/>
                                     <constraint firstItem="XyX-Rn-O5N" firstAttribute="leading" secondItem="fBO-Ik-bXx" secondAttribute="leading" constant="20" id="UhW-vT-HUS"/>
                                     <constraint firstItem="XyX-Rn-O5N" firstAttribute="top" secondItem="fBO-Ik-bXx" secondAttribute="top" constant="20" id="V3S-8p-FDS"/>
@@ -414,6 +413,7 @@
                                     <constraint firstAttribute="centerX" secondItem="VTq-9u-vlH" secondAttribute="centerX" constant="10" id="f8T-eD-wPh"/>
                                     <constraint firstItem="DA7-MD-5k0" firstAttribute="leading" secondItem="7te-Rt-1zG" secondAttribute="trailing" constant="14" id="fb8-gk-LSo"/>
                                     <constraint firstItem="7te-Rt-1zG" firstAttribute="top" secondItem="fBO-Ik-bXx" secondAttribute="top" constant="20" id="m3W-MJ-lHp"/>
+                                    <constraint firstAttribute="centerX" secondItem="W8P-A1-ij8" secondAttribute="centerX" id="oFe-RM-sUC"/>
                                     <constraint firstAttribute="bottom" secondItem="bF6-GW-Gl9" secondAttribute="bottom" constant="20" id="rOx-AC-00l"/>
                                     <constraint firstAttribute="centerX" secondItem="7te-Rt-1zG" secondAttribute="centerX" constant="10" id="sRn-6Z-ndA"/>
                                     <constraint firstItem="bF6-GW-Gl9" firstAttribute="top" secondItem="fBO-Ik-bXx" secondAttribute="top" constant="20" id="z46-lH-dPk"/>

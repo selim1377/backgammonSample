@@ -14,7 +14,7 @@
 @interface ChipView : Observer
 
 @property (assign, nonatomic , readonly) PlayerType playerType;
-@property (weak, nonatomic) IBOutlet UIView *colorView;
+@property (strong, nonatomic)  UIView *colorView;
 @property (assign, nonatomic) id<ChipViewDelegate> delegate;
 
 +(instancetype)createPlayerType:(PlayerType)type;

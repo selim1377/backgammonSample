@@ -46,6 +46,9 @@
     LineView *brokenLine  = [self brokenLineViewForPlayer:kBlackPLayer];
     [brokenLine addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self
                                                                              action:@selector(onLineTap:)]];
+    brokenLine.transform  = CGAffineTransformMakeRotation(M_PI);
+    
+    
     brokenLine = [self brokenLineViewForPlayer:kWhitePlayer];
     [brokenLine addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self
                                                                              action:@selector(onLineTap:)]];
@@ -53,6 +56,8 @@
     LineView *collectLine = [self collectLineViewForPlayer:kBlackPLayer];
     [collectLine addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self
                                                                              action:@selector(onLineTap:)]];
+    collectLine.transform  = CGAffineTransformMakeRotation(M_PI);
+    
     
     collectLine = [self collectLineViewForPlayer:kWhitePlayer];
     [collectLine addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self
@@ -76,11 +81,13 @@
         
         ChipView *chipView = [ChipView createPlayerType:type];
         chipView.delegate = self;
-        chipView.center = CGPointMake(self.boardView.center.x, -1000);
-        
+        chipView.center = CGPointMake(self.boardView.center.x, -1000
+                                      );
+        //chipView.hidden = YES;
         
         Chip *chip = [self.gameEngine.board.chips objectAtIndex:i];
         [chip addObserver:chipView];
+    
         [self.boardView addSubview:chipView];
     }
 

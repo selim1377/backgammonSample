@@ -10,23 +10,17 @@
             <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="715-tn-zJt">
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="715-tn-zJt">
                     <rect key="frame" x="2" y="2" width="16" height="16"/>
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="715-tn-zJt" secondAttribute="trailing" constant="2" id="MT4-ku-13h"/>
-                <constraint firstItem="715-tn-zJt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="eH3-aO-HUS"/>
-                <constraint firstAttribute="bottom" secondItem="715-tn-zJt" secondAttribute="bottom" constant="2" id="xZu-zL-yOd"/>
-                <constraint firstItem="715-tn-zJt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="xyA-jc-hCr"/>
+                <constraint firstItem="715-tn-zJt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="uLP-N7-48e"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <connections>
-                <outlet property="colorView" destination="715-tn-zJt" id="QBl-2h-RwI"/>
-            </connections>
             <point key="canvasLocation" x="65.5" y="87.5"/>
         </view>
     </objects>
