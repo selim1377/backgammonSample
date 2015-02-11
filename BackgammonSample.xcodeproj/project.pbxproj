@@ -40,6 +40,8 @@
 		8F91BFAB1A83905200B89680 /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91BFAA1A83905200B89680 /* LineView.m */; };
 		8F91BFAE1A8397BF00B89680 /* ChipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91BFAD1A8397BF00B89680 /* ChipView.m */; };
 		8F91BFB01A8398B200B89680 /* ChipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F91BFAF1A8398B200B89680 /* ChipView.xib */; };
+		8FF20FC21A8AD4DA0079F241 /* PersistentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF20FBF1A8AD4DA0079F241 /* PersistentManager.m */; };
+		8FF20FC31A8AD4DA0079F241 /* LocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF20FC11A8AD4DA0079F241 /* LocalData.m */; };
 		8FFBDC141A88E5D100C6B8A2 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFBDC131A88E5D100C6B8A2 /* Event.m */; };
 		8FFBDC171A88E6FF00C6B8A2 /* Observable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFBDC161A88E6FF00C6B8A2 /* Observable.m */; };
 		8FFBDC1A1A88E70D00C6B8A2 /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFBDC191A88E70D00C6B8A2 /* Observer.m */; };
@@ -126,6 +128,11 @@
 		8F91BFAC1A8397BF00B89680 /* ChipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChipView.h; sourceTree = "<group>"; };
 		8F91BFAD1A8397BF00B89680 /* ChipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChipView.m; sourceTree = "<group>"; };
 		8F91BFAF1A8398B200B89680 /* ChipView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChipView.xib; sourceTree = "<group>"; };
+		8FF20FBA1A8AB7390079F241 /* Notifications.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Notifications.h; sourceTree = "<group>"; };
+		8FF20FBE1A8AD4DA0079F241 /* PersistentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistentManager.h; sourceTree = "<group>"; };
+		8FF20FBF1A8AD4DA0079F241 /* PersistentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistentManager.m; sourceTree = "<group>"; };
+		8FF20FC01A8AD4DA0079F241 /* LocalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalData.h; sourceTree = "<group>"; };
+		8FF20FC11A8AD4DA0079F241 /* LocalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalData.m; sourceTree = "<group>"; };
 		8FFBDC121A88E5D100C6B8A2 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		8FFBDC131A88E5D100C6B8A2 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		8FFBDC151A88E6FF00C6B8A2 /* Observable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observable.h; sourceTree = "<group>"; };
@@ -188,6 +195,10 @@
 		8F554C221A822F2300625CC4 /* BackgammonSample */ = {
 			isa = PBXGroup;
 			children = (
+				8FF20FBE1A8AD4DA0079F241 /* PersistentManager.h */,
+				8FF20FBF1A8AD4DA0079F241 /* PersistentManager.m */,
+				8FF20FC01A8AD4DA0079F241 /* LocalData.h */,
+				8FF20FC11A8AD4DA0079F241 /* LocalData.m */,
 				8F554C881A826CD100625CC4 /* Custom Views */,
 				8F554C801A8260DB00625CC4 /* Actions */,
 				8F554C631A823C8B00625CC4 /* Categories */,
@@ -252,6 +263,7 @@
 		8F554C501A82389F00625CC4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8FFBDC1C1A893E8900C6B8A2 /* Delegates */,
 				8F05B9831A86042100458BD9 /* Enums */,
 				8FFBDC151A88E6FF00C6B8A2 /* Observable.h */,
 				8FFBDC161A88E6FF00C6B8A2 /* Observable.m */,
@@ -259,8 +271,6 @@
 				8FFBDC191A88E70D00C6B8A2 /* Observer.m */,
 				8FFBDC121A88E5D100C6B8A2 /* Event.h */,
 				8FFBDC131A88E5D100C6B8A2 /* Event.m */,
-				8F554C7E1A825DFA00625CC4 /* GameEngineDelegate.h */,
-				8F554C7F1A825E4800625CC4 /* PreGameEngineDelegate.h */,
 				8F554C511A8238AE00625CC4 /* BaseModel.h */,
 				8F554C521A8238AE00625CC4 /* BaseModel.m */,
 				8F554C541A82392D00625CC4 /* GameEngine.h */,
@@ -326,6 +336,16 @@
 				8F91BFAF1A8398B200B89680 /* ChipView.xib */,
 			);
 			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		8FFBDC1C1A893E8900C6B8A2 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				8F554C7E1A825DFA00625CC4 /* GameEngineDelegate.h */,
+				8F554C7F1A825E4800625CC4 /* PreGameEngineDelegate.h */,
+				8FF20FBA1A8AB7390079F241 /* Notifications.h */,
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,6 +455,7 @@
 				8F554C8E1A826E6800625CC4 /* PlayerView.m in Sources */,
 				8F05B9811A8602ED00458BD9 /* RollDiceAction.m in Sources */,
 				8F91BFAE1A8397BF00B89680 /* ChipView.m in Sources */,
+				8FF20FC31A8AD4DA0079F241 /* LocalData.m in Sources */,
 				8F554C2C1A822F2300625CC4 /* ViewController.m in Sources */,
 				8F554C591A82393E00625CC4 /* BaseController.m in Sources */,
 				8F554C7D1A8258E400625CC4 /* Board.m in Sources */,
@@ -455,6 +476,7 @@
 				8F554C741A82589200625CC4 /* Line.m in Sources */,
 				8F554C261A822F2300625CC4 /* main.m in Sources */,
 				8F554C6C1A824EC900625CC4 /* Dices.m in Sources */,
+				8FF20FC21A8AD4DA0079F241 /* PersistentManager.m in Sources */,
 				8F554C831A8260F600625CC4 /* Action.m in Sources */,
 				8F554C8B1A826CEA00625CC4 /* DiceView.m in Sources */,
 				8F554C621A82396900625CC4 /* PlayerController.m in Sources */,

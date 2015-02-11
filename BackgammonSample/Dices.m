@@ -13,9 +13,9 @@
 
 @property (nonatomic, strong) NSMutableArray *dices;
 
-@property (assign, nonatomic) int maxMove;
+@property (assign, nonatomic,readwrite) int maxMove;
 @property (assign, nonatomic) int rolledDiceCount;
-@property (assign, nonatomic) BOOL rolledDouble;
+@property (assign, nonatomic,readwrite) BOOL rolledDouble;
 @property (nonatomic, strong) NSMutableArray *possibleMoves;
 
 @end
@@ -85,16 +85,12 @@
         
         self.maxMove = dice0.value + dice1.value;
         self.possibleMoves = [NSMutableArray arrayWithObjects:[NSNumber numberWithInt:dice0.value],
-                              [NSNumber numberWithInt:dice1.value],
-                              [NSNumber numberWithInt:self.maxMove],nil];
+                              [NSNumber numberWithInt:dice1.value],nil];
     }
     else
     {
         self.maxMove = dice0.value * 4;
-        self.possibleMoves = [NSMutableArray arrayWithObjects:  [NSNumber numberWithInt:dice0.value],
-                              [NSNumber numberWithInt:dice0.value*2],
-                              [NSNumber numberWithInt:dice0.value*3],
-                              [NSNumber numberWithInt:self.maxMove],nil];
+        self.possibleMoves = [NSMutableArray arrayWithObjects:  [NSNumber numberWithInt:dice0.value],nil];
     }
 
 }
@@ -121,7 +117,12 @@
     if(self.maxMove == 0)
         return YES;
     
+    [self createPossibleMoves];
     
+    return NO;
+}
+-(void)createPossibleMoves
+{
     if(!self.rolledDouble)
     {
         self.possibleMoves = [NSMutableArray arrayWithObjects:[NSNumber numberWithInt:self.maxMove],nil];
@@ -129,16 +130,18 @@
     else
     {
         int oneDiceValue = [self diceForType:kBlackPLayer].value;
-        int loop = self.maxMove / oneDiceValue;
         
-        self.possibleMoves = [NSMutableArray new];
+        // this block supports multiple moves at a time
+        /*int loop = self.maxMove / oneDiceValue;
+         
+         self.possibleMoves = [NSMutableArray new];
+         
+         for (int i = 1; i <= loop; i++) {
+         [self.possibleMoves addObject:[NSNumber numberWithInt:oneDiceValue*i]];
+         }*/
         
-        for (int i = 1; i <= loop; i++) {
-            [self.possibleMoves addObject:[NSNumber numberWithInt:oneDiceValue*i]];
-        }
+        self.possibleMoves = [NSMutableArray arrayWithObjects:[NSNumber numberWithInt:oneDiceValue],nil];
     }
-    
-    return NO;
 }
 
 -(NSArray *)valuesOfDices
@@ -149,6 +152,31 @@
 -(BOOL)movesFinished
 {
     return (self.maxMove == 0);
+}
+
+-(void)restoreWithDictionary:(NSMutableDictionary *)dictionary
+{
+    [super restoreWithDictionary:dictionary];
+    
+    [[self.dices objectAtIndex:0] restoreWithDictionary:[dictionary objectForKey:@"dice0"]];
+    [[self.dices objectAtIndex:1] restoreWithDictionary:[dictionary objectForKey:@"dice1"]];
+    
+    self.possibleMoves = [dictionary objectForKey:@"possibleMoves"];
+    self.maxMove       = [[dictionary objectForKey:@"maxMove"] intValue];
+    self.rolledDouble  = [[dictionary objectForKey:@"rolledDouble"] boolValue];
+}
+
+-(NSMutableDictionary *)saveDictionary
+{
+    NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
+    
+    [dictionary setObject:[[self.dices objectAtIndex:0] saveDictionary] forKey:@"dice0"];
+    [dictionary setObject:[[self.dices objectAtIndex:1] saveDictionary] forKey:@"dice1"];
+    [dictionary setObject:self.possibleMoves forKey:@"possibleMoves"];
+    [dictionary setObject:[NSNumber numberWithInt:self.maxMove] forKey:@"maxMove"];
+    [dictionary setObject:[NSNumber numberWithBool:self.rolledDouble] forKey:@"rolledDouble"];
+    
+    return dictionary;
 }
 
 @end

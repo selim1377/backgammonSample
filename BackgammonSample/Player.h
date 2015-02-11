@@ -14,6 +14,8 @@
 @property (assign, readonly ,nonatomic) PlayerType playerType;
 @property (assign, nonatomic ,getter=hasTurn) BOOL turn;
 
+
+
 -(id)initWithType:(PlayerType)type WithName:(NSString *)playerName;
 -(void)turn;
 -(void)loseTurn;

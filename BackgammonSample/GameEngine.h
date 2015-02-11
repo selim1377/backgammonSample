@@ -29,6 +29,8 @@
 @property (assign, nonatomic,readonly) GameState gameState;
 @property (assign, nonatomic,readonly) PlayerType currentTurn;
 
+@property (assign, nonatomic) BOOL shouldPersistGame;
+
 // initial setup
 -(void)setup;
 
@@ -40,15 +42,13 @@
 
 -(void)rollDice;
 
--(void)preparePlayerMove;
 -(NSMutableArray *)movesForLine:(int)lineIndex;
--(void)playerMoved:(Move *)move;
--(void)playerShouldMove:(Move *)move;
-
+-(void)moveChipFromIndex:(int)from toIndex:(int)to;
 
 
 //data methods
 -(Player *)playerForType:(PlayerType)type;
 -(Board *)getBoard;
+
 
 @end

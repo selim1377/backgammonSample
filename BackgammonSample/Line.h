@@ -9,6 +9,12 @@
 #import "BaseModel.h"
 #import "Chip.h"
 
+#define BROKEN_LINE_INDEX_BLACK 25
+#define BROKEN_LINE_INDEX_WHITE 0
+
+#define COLLECT_LINE_INDEX_BLACK 30
+#define COLLECT_LINE_INDEX_WHITE 31
+
 @interface Line : BaseModel
 
 @property (assign, nonatomic,readonly) int  index;
@@ -22,5 +28,6 @@
 -(void)push:(Chip *)chip;
 -(Chip *)pop;
 -(Chip *)lastChip;
+-(BOOL)isBrokenLine;
 
 @end

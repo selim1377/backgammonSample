@@ -15,6 +15,7 @@
 typedef enum : NSUInteger {
     EVENT_TYPE_PLAYER_TURN,
     EVENT_TYPE_DICE_ROLL,
+    EVENT_TYPE_DICE_RESTORE,
     EVENT_TYPE_CHIP_MOVE
 } EventType;
 

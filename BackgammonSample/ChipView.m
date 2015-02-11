@@ -22,6 +22,7 @@
     ChipView *view = (ChipView *) [[[NSBundle mainBundle] loadNibNamed:@"ChipView" owner:self options:nil] objectAtIndex:0];
     view.playerType = type;
     view.userInteractionEnabled = NO;
+    view.tag = (type == kBlackPLayer) ? 50 : 51;
     
     view.colorView.backgroundColor = view.playerType == kBlackPLayer ? [UIColor blackColor] : [UIColor whiteColor];
     
@@ -34,8 +35,6 @@
     
     CGRect fr = [self.delegate availableRectForLine:chip.lineIndex andStackIndex:chip.stackIndex];
 
-    NSLog(@"Target frane %@",CGRectCreateDictionaryRepresentation(fr));
-    
     [UIView animateWithDuration:0.5
                      animations:^{
                          

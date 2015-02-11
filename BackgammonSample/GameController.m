@@ -7,8 +7,13 @@
 //
 
 #import "GameController.h"
+#import "LocalData.h"
+#import "Notifications.h"
+#import "GameState.h"
+
 
 @interface GameController ()
+
 
 @end
 
@@ -18,7 +23,50 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    //register to notifications, in order to save and restore data
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(onSaveNotification:)
+                                                 name:UIApplicationWillResignActiveNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(onRestoreNotification:)
+                                                 name:NOTIFICATION_APP_RESTORE
+                                               object:nil];
+    
+    
+
     [self gameSetup];
+    
+    [self performSelector:@selector(checkSavedData)
+               withObject:nil
+               afterDelay:1.0];
+    
+}
+
+-(void)checkSavedData
+{
+    // check previous state of the game is saved.
+    BOOL gameSaved = [LocalData shouldLoadGame];
+    if (gameSaved) {
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_APP_RESTORE
+                                                            object:nil];
+    }
+    
+    //[LocalData clear];
+}
+
+-(void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:UIApplicationWillResignActiveNotification
+                                                  object:nil];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:NOTIFICATION_APP_RESTORE
+                                                  object:nil];
+    
 }
 
 #pragma mark initial setup
@@ -27,6 +75,8 @@
 {
     [self setupGameEngine];
     [self setupControllers];
+    
+    
 }
 
 -(void)setupGameEngine
@@ -36,6 +86,7 @@
     self.gameEngine.preGameDelegate = self;
     
     [self.gameEngine setup];
+    
 }
 
 
@@ -62,6 +113,9 @@
     [self.boardController createBindings];
 }
 
+
+
+
 #pragma mark pre game engine delegate
 -(void)initializePregame
 {
@@ -82,11 +136,6 @@
 -(void)initializeGame
 {
     NSLog(@"initializeGame");
-    // game starts now
-    
-    // redraw chips on board
-    //[self.boardController positionChipViewsForGame:[self.gameEngine getBoard]];
-
 }
 
 -(void)gameTurn:(Player *)player
@@ -100,14 +149,22 @@
 }
 
 
--(void)playerBreak:(Move *)move
+-(void)playerCannotMove:(Player *)player
 {
-    MoveAction *action = [MoveAction actionWithMove:move];
-    [action setCompletion:^(Action *a) {
-        
-        NSLog(@"Break completed");
-    }];
-    [self.boardController showBreakAnimation:action];
+    // show an alert
+    /*[[[UIAlertView alloc] initWithTitle:@"Warning"
+                               message:[NSString stringWithFormat:@"%@ has no moves",player.name]
+                              delegate:self
+                     cancelButtonTitle:nil
+                     otherButtonTitles:@"OK", nil] show];;*/
+
+
+    NSLog(@"%@ has no move",player.name);
+}
+
+-(void)playerMoved:(Move *)move
+{
+    
 }
 
 #pragma mark ui delegates
@@ -117,11 +174,11 @@
     [self.gameEngine rollDice];    
 }
 
--(void)currentPLayerWantsToMove:(Move *)move
+#pragma mark uialertview delegate
+-(void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
-    [self.gameEngine playerShouldMove:move];
+    
 }
-
 
 #pragma mark uiviewcontroller methods
 - (void)didReceiveMemoryWarning {
@@ -156,4 +213,37 @@
     //start game from scratch
     [self.gameEngine startPreGame];   
 }
+
+#pragma mark save state methods
+-(void)onSaveNotification:(NSNotification *)notification
+{
+    // save the game only in actual game
+    if (self.gameEngine.gameState > GAMESTATE_PREGAME) {
+        
+        [LocalData save];
+        
+        // save current turn and current game state
+        NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+        [prefs setObject:[self.gameEngine saveDictionary] forKey:@"game"];
+        
+        [prefs synchronize];
+        
+        
+    }
+    else
+    {
+        [LocalData clear];
+    }
+}
+
+-(void)onRestoreNotification:(NSNotification *)notification
+{
+    
+    // remove new game screen
+    [self.startGameView disappear];
+    
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    [self.gameEngine restoreWithDictionary:[prefs objectForKey:@"game"]];
+}
+
 @end

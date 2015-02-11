@@ -79,84 +79,84 @@
                                         <subviews>
                                             <view tag="24" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jo-el-XuL" customClass="LineView">
                                                 <rect key="frame" x="0.0" y="0.0" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="hol-39-uaZ"/>
                                                 </constraints>
                                             </view>
                                             <view tag="23" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imt-Wb-i9k" customClass="LineView">
                                                 <rect key="frame" x="36" y="0.0" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="fPh-tO-rhk"/>
                                                 </constraints>
                                             </view>
                                             <view tag="22" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVo-Dw-TPj" customClass="LineView">
                                                 <rect key="frame" x="72" y="0.0" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="Gl5-gl-ubg"/>
                                                 </constraints>
                                             </view>
                                             <view tag="21" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8jP-ER-9BI" customClass="LineView">
                                                 <rect key="frame" x="108" y="0.0" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="lEF-Wj-50y"/>
                                                 </constraints>
                                             </view>
                                             <view tag="20" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8R6-YW-lNc" customClass="LineView">
                                                 <rect key="frame" x="144" y="0.0" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="tF7-ew-LbI"/>
                                                 </constraints>
                                             </view>
                                             <view tag="19" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJG-FK-aHD" customClass="LineView">
                                                 <rect key="frame" x="180" y="0.0" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="HqJ-fI-DzI"/>
                                                 </constraints>
                                             </view>
                                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIM-7L-LAj" customClass="LineView">
                                                 <rect key="frame" x="0.0" y="140" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="Cf7-Ip-hQv"/>
                                                 </constraints>
                                             </view>
                                             <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Juv-Kt-CtY" customClass="LineView">
                                                 <rect key="frame" x="36" y="140" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="IwV-Cu-uWz"/>
                                                 </constraints>
                                             </view>
                                             <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kk9-gh-WVm" customClass="LineView">
                                                 <rect key="frame" x="72" y="140" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="717-bf-fcu"/>
                                                 </constraints>
                                             </view>
                                             <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQW-2W-a4y" customClass="LineView">
                                                 <rect key="frame" x="108" y="140" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="i7d-kz-xW1"/>
                                                 </constraints>
                                             </view>
                                             <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zf7-gd-Mjq" customClass="LineView">
                                                 <rect key="frame" x="144" y="140" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="n6C-5u-Nal"/>
                                                 </constraints>
                                             </view>
                                             <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zMj-bj-Qz1" customClass="LineView">
                                                 <rect key="frame" x="180" y="140" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="ega-eN-zu9"/>
                                                 </constraints>
@@ -207,84 +207,84 @@
                                         <subviews>
                                             <view tag="18" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PlG-pR-xkZ" customClass="LineView">
                                                 <rect key="frame" x="0.0" y="0.0" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="C7e-s3-Va8"/>
                                                 </constraints>
                                             </view>
                                             <view tag="17" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bK5-m4-bxA" customClass="LineView">
                                                 <rect key="frame" x="36" y="0.0" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="uJN-VE-Dfi"/>
                                                 </constraints>
                                             </view>
                                             <view tag="16" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zc5-lT-gMQ" customClass="LineView">
                                                 <rect key="frame" x="72" y="0.0" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="DDe-eE-0vA"/>
                                                 </constraints>
                                             </view>
                                             <view tag="15" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70v-Zp-cZ6" customClass="LineView">
                                                 <rect key="frame" x="108" y="0.0" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="YvR-Ty-2fh"/>
                                                 </constraints>
                                             </view>
                                             <view tag="14" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4I-Rd-2yf" customClass="LineView">
                                                 <rect key="frame" x="144" y="0.0" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="jnn-vG-xkP"/>
                                                 </constraints>
                                             </view>
                                             <view tag="13" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gfP-ot-sZK" customClass="LineView">
                                                 <rect key="frame" x="180" y="0.0" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="Tg0-dC-fsa"/>
                                                 </constraints>
                                             </view>
                                             <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFX-ME-dgp" customClass="LineView">
                                                 <rect key="frame" x="0.0" y="140" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="o3b-jf-O9A"/>
                                                 </constraints>
                                             </view>
                                             <view tag="8" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GuF-a3-kYQ" customClass="LineView">
                                                 <rect key="frame" x="36" y="140" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="yjx-e1-gMy"/>
                                                 </constraints>
                                             </view>
                                             <view tag="9" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VhD-mt-3Za" customClass="LineView">
                                                 <rect key="frame" x="72" y="140" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="gnz-pF-eyZ"/>
                                                 </constraints>
                                             </view>
                                             <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WfC-bs-F2s" customClass="LineView">
                                                 <rect key="frame" x="108" y="140" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="P5K-84-tgy"/>
                                                 </constraints>
                                             </view>
                                             <view tag="11" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BDR-ly-CZO" customClass="LineView">
                                                 <rect key="frame" x="144" y="140" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="wXf-rU-eEb"/>
                                                 </constraints>
                                             </view>
                                             <view tag="12" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSd-8x-EgH" customClass="LineView">
                                                 <rect key="frame" x="180" y="140" width="36" height="100"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="eDV-CI-Cmu"/>
                                                 </constraints>
@@ -330,7 +330,7 @@
                                             <constraint firstItem="Zc5-lT-gMQ" firstAttribute="width" secondItem="gfP-ot-sZK" secondAttribute="width" id="yZA-i6-FM3"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W8P-A1-ij8">
+                                    <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W8P-A1-ij8">
                                         <rect key="frame" x="259" y="90" width="50" height="100"/>
                                         <subviews>
                                             <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9di-Yz-GGF" customClass="DiceView">
@@ -363,28 +363,47 @@
                                             <constraint firstAttribute="height" constant="100" id="kZV-Wt-kHE"/>
                                         </constraints>
                                     </view>
-                                    <view tag="1000" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTq-9u-vlH" customClass="LineView">
-                                        <rect key="frame" x="266" y="200" width="36" height="60"/>
+                                    <view tag="25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTq-9u-vlH" customClass="LineView">
+                                        <rect key="frame" x="266" y="200" width="16" height="60"/>
                                         <color key="backgroundColor" red="0.94117647410000005" green="0.13333334029999999" blue="0.027450980619999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="1OP-Dc-n5P"/>
-                                            <constraint firstAttribute="width" constant="36" id="EaU-Mg-TZ8"/>
+                                            <constraint firstAttribute="width" constant="16" id="EaU-Mg-TZ8"/>
                                         </constraints>
                                     </view>
-                                    <view tag="1001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7te-Rt-1zG" customClass="LineView">
-                                        <rect key="frame" x="266" y="20" width="36" height="60"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7te-Rt-1zG" customClass="LineView">
+                                        <rect key="frame" x="266" y="20" width="16" height="60"/>
                                         <color key="backgroundColor" red="0.94117647410000005" green="0.13333334029999999" blue="0.027450980619999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="A5A-ku-A2b"/>
-                                            <constraint firstAttribute="width" constant="36" id="tWI-jO-gM7"/>
+                                            <constraint firstAttribute="width" constant="16" id="tWI-jO-gM7"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="30" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NJm-h1-BoN" customClass="LineView">
+                                        <rect key="frame" x="296" y="200" width="16" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.61253991789999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Iik-rT-qmR"/>
+                                            <constraint firstAttribute="width" constant="16" id="gZT-OD-ftN"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="31" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DA7-MD-5k0" customClass="LineView">
+                                        <rect key="frame" x="296" y="20" width="16" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.61253991789999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="16" id="0sP-x9-7z4"/>
+                                            <constraint firstAttribute="height" constant="60" id="A1u-hn-pyk"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
+                                    <constraint firstItem="NJm-h1-BoN" firstAttribute="leading" secondItem="VTq-9u-vlH" secondAttribute="trailing" constant="14" id="0BT-ar-Uqk"/>
+                                    <constraint firstItem="DA7-MD-5k0" firstAttribute="top" secondItem="fBO-Ik-bXx" secondAttribute="top" constant="20" id="0Zd-KN-3WL"/>
                                     <constraint firstAttribute="bottom" secondItem="XyX-Rn-O5N" secondAttribute="bottom" constant="20" id="5sb-Cu-kdX"/>
                                     <constraint firstItem="bF6-GW-Gl9" firstAttribute="leading" secondItem="XyX-Rn-O5N" secondAttribute="trailing" constant="96" id="61f-R1-GKN"/>
                                     <constraint firstAttribute="centerY" secondItem="W8P-A1-ij8" secondAttribute="centerY" id="CX4-uZ-5qy"/>
+                                    <constraint firstAttribute="bottom" secondItem="NJm-h1-BoN" secondAttribute="bottom" constant="20" id="Ehs-lJ-Yla"/>
                                     <constraint firstAttribute="bottom" secondItem="VTq-9u-vlH" secondAttribute="bottom" constant="20" id="G2L-ax-aGi"/>
                                     <constraint firstItem="bF6-GW-Gl9" firstAttribute="leading" secondItem="W8P-A1-ij8" secondAttribute="trailing" constant="23" id="HMW-vi-y5Q"/>
                                     <constraint firstItem="W8P-A1-ij8" firstAttribute="leading" secondItem="XyX-Rn-O5N" secondAttribute="trailing" constant="23" id="K6l-Pc-16D"/>
@@ -392,15 +411,16 @@
                                     <constraint firstItem="XyX-Rn-O5N" firstAttribute="leading" secondItem="fBO-Ik-bXx" secondAttribute="leading" constant="20" id="UhW-vT-HUS"/>
                                     <constraint firstItem="XyX-Rn-O5N" firstAttribute="top" secondItem="fBO-Ik-bXx" secondAttribute="top" constant="20" id="V3S-8p-FDS"/>
                                     <constraint firstItem="XyX-Rn-O5N" firstAttribute="width" secondItem="bF6-GW-Gl9" secondAttribute="width" id="Wyj-Kk-imh"/>
-                                    <constraint firstAttribute="centerX" secondItem="VTq-9u-vlH" secondAttribute="centerX" id="f8T-eD-wPh"/>
+                                    <constraint firstAttribute="centerX" secondItem="VTq-9u-vlH" secondAttribute="centerX" constant="10" id="f8T-eD-wPh"/>
+                                    <constraint firstItem="DA7-MD-5k0" firstAttribute="leading" secondItem="7te-Rt-1zG" secondAttribute="trailing" constant="14" id="fb8-gk-LSo"/>
                                     <constraint firstItem="7te-Rt-1zG" firstAttribute="top" secondItem="fBO-Ik-bXx" secondAttribute="top" constant="20" id="m3W-MJ-lHp"/>
                                     <constraint firstAttribute="bottom" secondItem="bF6-GW-Gl9" secondAttribute="bottom" constant="20" id="rOx-AC-00l"/>
-                                    <constraint firstAttribute="centerX" secondItem="7te-Rt-1zG" secondAttribute="centerX" id="sRn-6Z-ndA"/>
+                                    <constraint firstAttribute="centerX" secondItem="7te-Rt-1zG" secondAttribute="centerX" constant="10" id="sRn-6Z-ndA"/>
                                     <constraint firstItem="bF6-GW-Gl9" firstAttribute="top" secondItem="fBO-Ik-bXx" secondAttribute="top" constant="20" id="z46-lH-dPk"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c3e-5P-RTd">
-                                <rect key="frame" x="1000" y="0.0" width="568" height="320"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3e-5P-RTd">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ekm-dp-P13">
                                         <rect key="frame" x="211" y="145" width="147" height="30"/>

@@ -28,13 +28,15 @@
                          
                      } completion:^(BOOL finished) {
                          
-                         // show turn button, and hide the others
-                         if(hasTurn)
-                             [self showRollDiceButton];
-                         else
-                             [self hideRollDiceButton];
+                         
                          
                      }];
+    
+    // show turn button, and hide the others
+    if(hasTurn)
+        [self showRollDiceButton];
+    else
+        [self hideRollDiceButton];
 }
 
 -(UIButton *)rollDiceButton
@@ -62,8 +64,12 @@
 
 -(void)onNotify:(Event *)event
 {
-    BOOL turn = [event.entity boolValue];
-    [self turnAnimation:turn];
+    
+    if (event.eventType == EVENT_TYPE_PLAYER_TURN) {
+        BOOL turn = [event.entity boolValue];
+        [self turnAnimation:turn];
+    }
+    
 }
 
 @end

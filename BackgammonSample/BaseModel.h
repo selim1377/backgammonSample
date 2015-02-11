@@ -14,4 +14,7 @@
 // Defines common enumarations and operation for all models in the application
 @interface BaseModel : Observable
 
+-(void)restoreWithDictionary:(NSMutableDictionary *)dictionary;
+-(NSDictionary *)saveDictionary;
+
 @end

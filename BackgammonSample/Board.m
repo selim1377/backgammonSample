@@ -44,12 +44,22 @@
     }
     
     // add broken line for black player
-    Line *line = [[Line alloc] initWithIndex:1000];
+    Line *line = [[Line alloc] initWithIndex:BROKEN_LINE_INDEX_BLACK];
     [self.lines addObject:line];
     
     
     // add broken line for white player
-    line = [[Line alloc] initWithIndex:1001];
+    line = [[Line alloc] initWithIndex:BROKEN_LINE_INDEX_WHITE];
+    [self.lines addObject:line];
+    
+    
+    // add collect line for black player
+    line = [[Line alloc] initWithIndex:COLLECT_LINE_INDEX_BLACK];
+    [self.lines addObject:line];
+    
+    
+    // add broken line for white player
+    line = [[Line alloc] initWithIndex:COLLECT_LINE_INDEX_WHITE];
     [self.lines addObject:line];
 }
 
@@ -133,8 +143,69 @@
 
 -(Line *)brokenLineForPlayer:(PlayerType)type
 {
-    int index = (type == kBlackPLayer) ? 1000 : 1001;
+    int index = (type == kBlackPLayer) ? BROKEN_LINE_INDEX_BLACK : BROKEN_LINE_INDEX_WHITE;
     return [self lineForIndex:index];
+}
+
+-(NSMutableArray *)linesForPlayer:(PlayerType)playerType
+{
+    NSMutableArray *linesOfPlayer = [NSMutableArray new];
+    for (int i=1; i<=24; i++) {
+        Line *line = [self lineForIndex:i];
+        
+        if (line.owner == playerType) {
+            
+            [linesOfPlayer addObject:[NSNumber numberWithInt:i]];
+        }
+    }    
+    return linesOfPlayer;
+}
+
+-(NSInteger)numberOfBrokenChipsForPlayer:(PlayerType)playerType
+{
+    Line *broken = [self brokenLineForPlayer:playerType];
+    return broken.chips.count;
+}
+
+-(NSInteger)pointsOfPlayer:(PlayerType)playerType
+{
+    NSMutableArray *indices = [self linesForPlayer:playerType];
+    NSInteger total = 0;
+    
+    for (NSNumber *indice in indices) {
+        
+        int lineIndex = [indice intValue];
+        Line *line    = [self lineForIndex:lineIndex];
+        int multiplier = (playerType == kBlackPLayer) ? lineIndex : ABS(lineIndex - 25);
+        
+        total = total + (multiplier * line.chips.count);
+    }
+    
+    return total;
+}
+
+-(BOOL)hasPlayerBrokenChips:(PlayerType)playerType
+{
+    NSInteger chips = [self numberOfBrokenChipsForPlayer:playerType];
+    return (chips > 0);
+}
+
+-(BOOL)index:(int)lineIndex IsAtHomeForPlayer:(PlayerType)playerType
+{
+    
+    if (playerType == kBlackPLayer) {
+        
+        if(lineIndex >= 1 && lineIndex <= 6)
+            return YES;
+    }
+    
+    if (playerType == kWhitePlayer) {
+        
+        if(lineIndex >= 19 && lineIndex <= 24)
+            return YES;
+    }
+    
+    return NO;
 }
 
 -(void)updateMove:(Move *)move
@@ -146,6 +217,7 @@
     {
         Chip *brokenChip = [target pop];
         Line *brokenLine = [self brokenLineForPlayer: brokenChip.owner];
+        brokenChip.isBroken  = YES;
         [brokenLine push:brokenChip];
     }
 
@@ -154,6 +226,46 @@
     [target push:chip];
     
     
+}
+
+-(void)restoreWithDictionary:(NSMutableDictionary *)dictionary
+{
+    [super restoreWithDictionary:dictionary];
+    
+    NSMutableArray *positions = [dictionary objectForKey:@"positions"];
+    for (NSMutableDictionary *position in positions) {
+        
+        int lineIndex       = [[position objectForKey:@"line"] intValue];
+        NSInteger chipCount = [[position objectForKey:@"chip"] integerValue];
+        PlayerType type     = [[position objectForKey:@"type"] intValue];
+        
+        [self positionChips:(int)chipCount forLine:lineIndex withPlayerType:type];
+        
+    }
+}
+
+-(NSDictionary *)saveDictionary
+{
+    NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
+    NSMutableArray *positions = [NSMutableArray new];
+    for (Line *line in self.lines) {
+        
+        int lineIndex = line.index;
+        NSInteger chipCount = line.chips.count;
+        if (chipCount > 0) {
+            PlayerType type = [line lastChip].owner;
+            NSMutableDictionary *position = [NSMutableDictionary dictionary];
+            [position setObject:[NSNumber numberWithInt:lineIndex]      forKey:@"line"];
+            [position setObject:[NSNumber numberWithInteger:chipCount]  forKey:@"chip"];
+            [position setObject:[NSNumber numberWithInt:type]           forKey:@"type"];
+            
+            [positions addObject:position];
+        }
+    }
+    
+    [dictionary setObject:positions forKey:@"positions"];
+    
+    return dictionary;
 }
 
 

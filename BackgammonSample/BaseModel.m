@@ -10,4 +10,14 @@
 
 @implementation BaseModel
 
+-(NSDictionary *)saveDictionary
+{
+    return [NSDictionary dictionary];
+}
+
+-(void)restoreWithDictionary:(NSMutableDictionary *)dictionary
+{
+    NSLog(@"%@ -> %@",[self class],dictionary);
+}
+
 @end

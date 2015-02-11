@@ -67,7 +67,8 @@
 
 -(void)reset
 {
-    self.backgroundColor = [UIColor brownColor];
+    UIColor *normalColor = ((self.index %2) == 1) ? [UIColor brownColor] : [UIColor darkGrayColor];    
+    self.backgroundColor = normalColor;
     self.highlighted = NO;
 }
 

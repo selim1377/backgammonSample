@@ -19,13 +19,5 @@
 
 -(void)createBindings;
 
--(CGRect)getAvailableRectForLine:(int)lineIndex andStackIndex:(int)stackIndex;
-
-// position initially
--(void)positionChipViewsForGame:(Board *)board;
-
-// move animation
--(void)showMoveAnimation:(MoveAction *)moveAction;
--(void)showBreakAnimation:(MoveAction *)action;
 
 @end

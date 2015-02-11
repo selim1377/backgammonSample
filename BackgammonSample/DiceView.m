@@ -37,6 +37,7 @@
                                                   target: self
                                                 selector:@selector(onTick:)
                                                 userInfo: nil repeats:YES];
+    [t timeInterval];
 }
 
 -(void)onTick:(NSTimer *)timer
@@ -51,6 +52,7 @@
         [self presentDiceValue:self.actualValue];
         
         // event completion fires
+        if(self.completion)
         self.completion();
         
         return;
@@ -74,7 +76,13 @@
         
         int value = [event.entity intValue];
         [self animateWithValue:value];
-    }    
+    }
+    
+    if (event.eventType == EVENT_TYPE_DICE_RESTORE) {
+        
+        int value = [event.entity intValue];
+        [self presentDiceValue:value];
+    }
     
 }
 

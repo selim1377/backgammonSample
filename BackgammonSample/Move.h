@@ -16,7 +16,8 @@
 
 @property (assign, nonatomic) BOOL canHappen;
 @property (assign, nonatomic) BOOL willBreak;
+@property (assign, nonatomic) BOOL collectMove;
 
-+(Move *)createMoveFrom:(int)f to:(int)t;
++(Move *)createMoveFrom:(int)f to:(int)t value:(int)value;
 
 @end

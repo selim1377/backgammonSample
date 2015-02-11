@@ -15,4 +15,5 @@
 
 -(void)rollDiceWithCompletion:(EventCompletion)completion;
 
+
 @end

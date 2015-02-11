@@ -16,5 +16,6 @@
 -(void)gameTurn:(Player *)player;
 -(void)dicesRolled:(Dices *)dices;
 -(void)playerMoved:(Move *)move;
+-(void)playerCannotMove:(Player *)player;
 
 @end

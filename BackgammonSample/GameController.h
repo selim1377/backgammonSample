@@ -16,7 +16,8 @@
 
 #import "UIView+Animation.h"
 
-@interface GameController : UIViewController< GameEngineDelegate,PreGameEngineDelegate,UIDelegate>
+@interface GameController : UIViewController< GameEngineDelegate,PreGameEngineDelegate,UIDelegate , UIAlertViewDelegate>
+
 
 
 // Controllers

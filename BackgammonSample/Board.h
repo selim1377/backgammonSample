@@ -17,9 +17,24 @@
 
 -(void)createLines;
 -(void)positionChipsForGameStart;
+
 -(Line *)lineForIndex:(int)lineIndex;
+
+-(NSMutableArray *)linesForPlayer:(PlayerType)playerType;
+
 -(Line *)brokenLineForPlayer:(PlayerType)type;
+
+-(NSInteger)numberOfBrokenChipsForPlayer:(PlayerType)playerType;
+
+-(NSInteger)pointsOfPlayer:(PlayerType)playerType;
+
+-(BOOL)hasPlayerBrokenChips:(PlayerType)playerType;
+
+-(BOOL)index:(int)lineIndex IsAtHomeForPlayer:(PlayerType)playerType;
+
 -(void)updateMove:(Move *)move;
+
+
 
 // line returnin functions
 //-(Line *)getLineByIndex;

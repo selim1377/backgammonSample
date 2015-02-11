@@ -13,7 +13,6 @@
 @property (nonatomic, readwrite, strong) NSString *name;
 @property (assign, readwrite ,nonatomic) PlayerType playerType;
 
-
 @end
 
 @implementation Player
@@ -33,6 +32,7 @@
 -(void)turn
 {
     self.turn = YES;
+
     
     Event *event = [[Event alloc] initWithEntity:[NSNumber numberWithBool:self.turn] withType:EVENT_TYPE_PLAYER_TURN];
     [self notify:event];
@@ -41,11 +41,13 @@
 -(void)loseTurn
 {
     self.turn = NO;
+
     
     Event *event = [[Event alloc] initWithEntity:[NSNumber numberWithBool:self.turn] withType:EVENT_TYPE_PLAYER_TURN];
     [self notify:event];
 
 }
+
 
 -(NSString *)description
 {

@@ -71,9 +71,14 @@
     return [self.chips lastObject];
 }
 
+-(BOOL)isBrokenLine
+{
+    return (self.index == BROKEN_LINE_INDEX_BLACK || self.index == BROKEN_LINE_INDEX_WHITE);
+}
+
 -(NSString *)description
 {
-    return [NSString stringWithFormat:@"Line %d chips %ld owner:%d",self.index,self.chips.count,self.owner];
+    return [NSString stringWithFormat:@"Line %d chips %ld owner:%d",self.index,self.chips.count,(int)self.owner];
 }
 
 

@@ -10,8 +10,9 @@
 
 @interface Chip : BaseModel
 
-@property (assign, nonatomic,readonly) PlayerType owner;
-@property (assign, nonatomic , readonly) int lineIndex,stackIndex;
+@property (assign, nonatomic, readonly) PlayerType owner;
+@property (assign, nonatomic, readonly) int lineIndex,stackIndex;
+@property (assign, nonatomic) BOOL isBroken;
 
 
 -(instancetype)initWithPlayerType:(PlayerType)type;

@@ -21,4 +21,6 @@
 -(Dice *)diceForType:(PlayerType)type;
 -(NSArray *)valuesOfDices;
 
+-(void)restoreWithDictionary:(NSMutableDictionary *)dictionary;
+
 @end

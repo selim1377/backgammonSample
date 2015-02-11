@@ -32,19 +32,19 @@
     return self;
 }
 
-+(Move *)createMoveFrom:(int)f to:(int)t {
++(Move *)createMoveFrom:(int)f to:(int)t  value:(int)value{
     Move *move = [Move new];
     move.from   = f;
     move.to     = t;
     
-    move.value = (int) fabs( move.from - move.to);
+    move.value = value;
     
     return move;
 }
 
 -(NSString *)description
 {
-    return [NSString stringWithFormat:@"From:%d  To:%d value%d canHappen:%d  willBreak:%d",self.from,self.to,self.value,self.canHappen,self.willBreak];
+    return [NSString stringWithFormat:@"From:%d  To:%d value:%d canHappen:%d  willBreak:%d",self.from,self.to,self.value,self.canHappen,self.willBreak];
 }
 
 @end
